@@ -4,8 +4,12 @@
 | Office       | 1001K Hunter North                      |
 | Office Hours | 11:00 - 12:00 Mon/Thu or by appointment |
 
+* Main Class Syllabus links:
+- [[https://stjohn.github.io/teaching/csci127/f19.html][Main 127 materials]]
+- [[https://stjohn.github.io/teaching/csci127/f19/honors.html][Honors 127 materials (not Daedalus)]]
 
-https://stjohn.github.io/teaching/csci127/f19.html
 
 
-https://stjohn.github.io/teaching/csci127/f19/honors.html
+
+
+
