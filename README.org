@@ -1,4 +1,9 @@
-# 127
+* CSCI 127 - Daedalus  
+| Instructor   | Mike Zamansky                           |
+| Email        | mz631@hunter.cuny.edu                   |
+| Office       | 1001K Hunter North                      |
+| Office Hours | 11:00 - 12:00 Mon/Thu or by appointment |
+
 
 https://stjohn.github.io/teaching/csci127/f19.html
 
