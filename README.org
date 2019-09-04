@@ -16,7 +16,8 @@
 
 * Python 
 - Automate the Boring Stuff in Python: https://automatetheboringstuff.com/
-- Learn Python the Hard Way: https://learnpythonthehardway.org/python3/mm
+- Learn Python the Hard Way: https://www.programmer-books.com/learn-python-3-the-hard-way/
+
 
 
 
