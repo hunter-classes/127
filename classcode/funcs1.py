@@ -1,26 +1,24 @@
+
 def f(a):
     a = a + 10
     return a
 
-def inc(val):
-    val = val + 1
-    return val
+num = 20
+print(num)
+print(f(num))
+print(num)
+x = f(num)
+num = f(num)
+print(x,num)
 
-def add2(a,b):
-    result = a + b
-    return result
+z = 10
+print(z)
+z = z + 5
+print(z)
 
-a = 10
-print(f(a))
-b = 10
-c = inc(b)
-print("C is ",c)
 
-a = 15
-b = 30
-result = add2(a,b)
-print(result)
+a = 30
+print(a)
+x = f(a)
+print(a,x)
 
-s1 = "hello"
-s2 = "world"
-print(add2(s1,s2))
