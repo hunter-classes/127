@@ -22,5 +22,22 @@ def possesify(word):
     
     return result
 
+def possesify2(word):
+    # ends in s
+    # ends in not s
+    #  ends in 's
+    if word.endswith("'s") or word.endswith("'"):
+        result = word
+    elif word.endswith('s'):
+        result = word + "'"
+    else:
+        result = word + "'s"
+    return result
+
 print(possesify("John"))
 print(possesify("cars"))
+print("----------------")
+print(possesify2("John"))
+print(possesify2("John's"))
+print(possesify2("cars"))
+print(possesify2("cars'"))
