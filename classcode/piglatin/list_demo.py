@@ -45,8 +45,7 @@ for letter in sentence:
     
     
 print("-------")
-sentence_list = sentence.split()
-for word in sentence_list:
+for word in sentence.split():
     print(word.upper())
     
     
