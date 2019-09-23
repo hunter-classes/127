@@ -18,12 +18,16 @@ def piglatinify(word):
         result = word[1:] + first + "ay"
     return result
 
-x = piglatinify("hello")
-print("ellohay : ",x)
-x = piglatinify("zero")
-print("erozay : ",x)
-x = piglatinify("")
-print("nothing : ",x)
-x = piglatinify("eyeball")
-print("eyeballay : ",x)
 
+def sentence_to_piglatin(sentence):
+    rlist = []
+    for word in sentence.split():
+        new_word = piglatinify(word)
+        rlist.append(new_word)
+        # rlist = rlist + [new_word] <-- same as line above
+    
+    return " ".join(rlist)
+
+
+encoded_sentence = sentence_to_piglatin("this is a test")
+print(encoded_sentence+":")
