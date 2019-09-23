@@ -11,11 +11,31 @@ def piglatinify(word):
     if len(word) == 0:
         return word
     
+    # if there's a period, strip it out and
+    # set append_period so that we know to add it back in at the end
+    append_period = False
+    if word[-1] == '.':
+        append_period = True
+        word = word[:-1]
+        
+    capitalize = False
+    if word[0].isupper():
+        word=word[0].lower() + word[1:]
+        capitalize = True
+        
+    
     first = word[0]
     if first in "aeiou":
         result = word + "ay"
-    else:
+    elif first:
         result = word[1:] + first + "ay"
+
+    # if we stripped out a period at the top, add it back in
+    if append_period:
+        result = result + "."
+    
+    if capitalize:
+        result = result.capitalize()
     return result
 
 
@@ -29,5 +49,5 @@ def sentence_to_piglatin(sentence):
     return " ".join(rlist)
 
 
-encoded_sentence = sentence_to_piglatin("this is a test")
-print(encoded_sentence+":")
+encoded_sentence = sentence_to_piglatin("This is a sentence.")
+print(encoded_sentence)
