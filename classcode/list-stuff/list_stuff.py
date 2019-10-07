@@ -1,10 +1,30 @@
 import random
 
-def freqency(item,l):
+def freqency(x,l):
     """
     return the number of times item occurs in list l
     """
-    pass
+    count = 0
+    for item in l:
+        if item == x:
+            count = count + 1
+    return count
+
+
+def find_largest(l):
+    largest = l[0]
+    for item in l:
+        if item > largest:
+            largest = item
+    return largest
+
+def find_largest_index(l):
+    largest_index = 0
+    for i in range(len(l)):
+        if l[i] > l[largest_index]:
+            largest_index = i
+    return largest_index
+
 
 
 
