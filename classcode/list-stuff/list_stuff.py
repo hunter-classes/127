@@ -5,8 +5,7 @@ def freqency(x,l):
     return the number of times item occurs in list l
     """
     count = 0
-    for item in l:
-        if item == x:
+    if item == x:
             count = count + 1
     return count
 

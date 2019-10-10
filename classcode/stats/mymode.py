@@ -13,6 +13,14 @@ def frequency(l,i):
             count = count + 1
     return count
 
+def largest(l):
+    l_so_far = 0
+    for item in l:
+        if item > l_so_far:
+            l_so_far = item
+    return l_so_far
+
+
 def mymode(l):
     mode_so_far = l[0]
     freq_so_far = frequency(l,mode_so_far)
@@ -24,5 +32,9 @@ def mymode(l):
     return mode_so_far
 
 
-        
+
+#l = build_list(16000000,100)
+#print("GO")
+#print(l.sort())
+
 
