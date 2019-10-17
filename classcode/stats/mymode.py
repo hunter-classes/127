@@ -21,7 +21,7 @@ def largest(l):
     return l_so_far
 
 
-def mymode(l):
+def mymode1(l):
     mode_so_far = l[0]
     freq_so_far = frequency(l,mode_so_far)
     for item in l:
@@ -38,19 +38,42 @@ def mymode2(l):
     for i in range(100):
         tallies.append(0)
         
-    # go through l
-      # for each item in l add 1 to the appopriate bucket
     for item in l:
         tallies[item] = tallies[item] + 1
         
     # figure out which bucket has the largest value
+    largest_index = 0
+    for i in range(len(tallies)):
+        if tallies[i] > tallies[largest_index]:
+            largest_index = i
+            
+    return largest_index
 
-    # return that value
-    return tallies
+def bucket_sort(l):
+    
+    tallies = []
+    for i in range(10):
+        tallies.append(0)
+        
+    for item in l:
+        tallies[item] = tallies[item] + 1
+        
+    result = []
+    for i in range(len(tallies)):
+        for j in range(tallies[i]):
+            result.append(i)
+
+    print(tallies)
+            
+    return result
 
 
-l = build_list(10000,100)
+l = build_list(20,10)
 print("GO")
-print(mymode2(l))
+#print(l)
+#print("-----")
+#print(mymode1(l))
+print(l)
+print(bucket_sort(l))
 
 
