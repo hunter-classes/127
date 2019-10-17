@@ -31,10 +31,21 @@ def mymode(l):
             freq_so_far = freq_item
     return mode_so_far
 
+def mymode2(l):
+    # make buckets to hold tallies of each value (0-100)
+    tallies = []
+    for i in range(100):
+        tallies.append(0)
+        
+    # go through l
+      # for each item in l add 1 to the appopriate bucket
 
+    # figure out which bucket has the largest value
 
-#l = build_list(16000000,100)
-#print("GO")
-#print(l.sort())
+    # return that value
+    return tallies
+l = build_list(10000,100)
+print("GO")
+print(mymode2(l))
 
 
