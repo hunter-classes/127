@@ -32,18 +32,23 @@ def mymode(l):
     return mode_so_far
 
 def mymode2(l):
-    # make buckets to hold tallies of each value (0-100)
+
+    
     tallies = []
     for i in range(100):
         tallies.append(0)
         
     # go through l
       # for each item in l add 1 to the appopriate bucket
-
+    for item in l:
+        tallies[item] = tallies[item] + 1
+        
     # figure out which bucket has the largest value
 
     # return that value
     return tallies
+
+
 l = build_list(10000,100)
 print("GO")
 print(mymode2(l))
