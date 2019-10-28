@@ -14,6 +14,10 @@ print(q1(1,2))
 
 #--------------- Q2 -------------------------
 def q2(s):
+    """
+    >>> q2("helicopter hello see")
+    'hlicoptr hllo s'
+    """
     result = ""
     for letter in s:
         if letter != 'e':
