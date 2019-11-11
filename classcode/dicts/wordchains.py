@@ -35,3 +35,19 @@ def generate(d,numwords,startword):
 #result = build_wordchain("testset.txt")
 words = build_wordchain("psalms.txt")
 
+tuple_dict = { ("when","shall") : ["we"],
+               ("shall","we") : ["meet"],
+               ("we","meet") : ["again"],
+               ("meet","again") : ["in"]}
+twl = "we meet happily".split()
+k = (twl[0],twl[1])
+v = twl[2]
+tuple_dict[k].append(v)
+
+for k in tuple_dict:
+    #w1 = k[0]
+    #w2 = k[1]
+    (w1,w2) = k
+    v = tuple_dict[k]
+    print(w1,w2,v)
+    
