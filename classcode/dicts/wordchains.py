@@ -1,4 +1,4 @@
-
+import random
 
 def build_wordchain(filename):
     f = open(filename)
@@ -22,9 +22,16 @@ def build_wordchain(filename):
 
     return d
 
-#result = build_wordchain("testset.txt")
-words = build_wordchain("cyrano.txt")
+def generate(d,numwords,startword):
+    word = startword
+    result = [word]
+    for i in range(numwords):
+        nextword = random.choice(d[word])
+        result.append(nextword)
+        word = nextword
+    story = " ".join(result)
+    return story
 
-for k in words:
-    print(k,words[k])
+#result = build_wordchain("testset.txt")
+words = build_wordchain("psalms.txt")
 
