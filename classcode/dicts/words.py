@@ -17,10 +17,10 @@ f = open("mobydick.txt")
 
 all = f.read()
 cleaned = all.lower()
-#for letter_to_remove in ",.;!?-_0123456789":
-#    cleaned = cleaned.replace(letter_to_remove,'')
+#for letter_to_remove in ",.;:!?-_0123456789":
+#    cleaned = cleaned.replace(letter_to_remove,' ')
 
-letters_to_remove = ',.;!?-_0123456789'
+letters_to_remove = ',.;:!?-_0123456789'
 cleaned = [ x for x in cleaned if x not in letters_to_remove]
 cleaned = "".join(cleaned)
 
