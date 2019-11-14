@@ -111,7 +111,7 @@ def build_and_generate(filename,prefixlength,storylength):
     story = generate(words,storylength,storystart)
     return story
 
-story = build_and_generate("testset.txt", 2, 50)
+story = build_and_generate("psalms.txt", 3, 50)
 print(story)
 #words = build_wordchain("testset.txt",1)
 #words = build_wordchain2("testset.txt")
