@@ -1,7 +1,7 @@
 import random
 import sys
 
-def build_wordchain3(filename,prefix_length):
+def clean_file(filename):
     f = open(filename)
     rawdata = f.read()
 
@@ -11,8 +11,11 @@ def build_wordchain3(filename,prefix_length):
     cleaned = [ x for x in rawdata if x in letters_to_keep]
  
     cleaned = "".join(cleaned)
+    return cleaned.split()
 
-    wordlist = cleaned.split()
+def build_wordchain(wordlist,prefix_length):
+
+
     d={}
 
     for i in range(len(wordlist)-prefix_length):
@@ -22,7 +25,6 @@ def build_wordchain3(filename,prefix_length):
         #suffix or value
         suffix = wordlist[i+prefix_length]
 
-        print(prefix,suffix)
         d.setdefault(prefix,[])
         d[prefix].append(suffix)
     return d
@@ -75,21 +77,48 @@ def build_wordchain1(filename):
 
     return d
 
-def generate(d,numwords,startword):
-    word = startword
-    result = [word]
+def generate(d,numwords,startprefix):
+    prefix = tuple(startprefix)
+    prefixlength = len(prefix)
+    result = list(prefix)
     for i in range(numwords):
-        nextword = random.choice(d[word])
-        result.append(nextword)
-        word = nextword
+        try:
+            nextword = random.choice(d[prefix])
+            result.append(nextword)
+        except:
+            return " ".join(result)
+        # build the next prefix
+        prefix = prefix[1:] + (nextword,)
+
     story = " ".join(result)
     return story
 
-words = build_wordchain3("testset.txt",1)
+
+# def generate(d,numwords,startword):
+#     word = startword
+#     result = [word]
+#     for i in range(numwords):
+#         nextword = random.choice(d[word])
+#         result.append(nextword)
+#         word = nextword
+#     story = " ".join(result)
+#     return story
+
+def build_and_generate(filename,prefixlength,storylength):
+    wordlist = clean_file(filename)
+    words = build_wordchain(wordlist,prefixlength)
+    storystart = wordlist[:prefixlength]
+    story = generate(words,storylength,storystart)
+    return story
+
+story = build_and_generate("testset.txt", 2, 50)
+print(story)
+#words = build_wordchain("testset.txt",1)
 #words = build_wordchain2("testset.txt")
 #words = build_wordchain("psalms.txt")
 
-print(words)
+
+
 # tuple_dict = { ("when","shall") : ["we"],
 #                ("shall","we") : ["meet"],
 #                ("we","meet") : ["again"],
