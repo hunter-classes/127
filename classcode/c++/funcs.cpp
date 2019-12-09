@@ -90,6 +90,10 @@ int main()
 
   // }
   // std::cout << a << "\n";
-  
+  // a += 5; // same as a = a + 5;
+  // a -= 5; // same as a = a - 5;
+  // a *= 5; // same as a = a * 5;
+  // a /= 5; // same as a = a / 5;
+
   return 0;
 }
