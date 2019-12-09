@@ -19,5 +19,6 @@ int main()
      Loop until user guesser right
        1. get new user guess
        2. tell user if it's too high low or right
-     return 0;
+  */
+  return 0;
 }
