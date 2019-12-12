@@ -1,24 +1,28 @@
 #include <iostream>
 
+using std::cout;
+using std::cin;
+
+
 int main()
 {
 
+  
   int guess = 50;
-
-  /*
-    Loop until the computer guesses correctly
-      1. present guess
-      2. get if it's too high, low or right
-      3. update guess if necessary
-  */
-
-
-  /* version 2 - a separate program named guess2.cpp
-     computer stores a number
-     User will enter an initial guess
-     Loop until user guesser right
-       1. get new user guess
-       2. tell user if it's too high low or right
-  */
+  char correct='n';
+  
+  while (true){
+    std::cout << "Is the number " << guess << "?\n";
+    std::cout << "y/h/l\n\n";
+    std::cin >> correct;
+    if (correct=='h'){
+      guess = guess / 2;
+    } else if (correct=='l'){
+      guess = guess + (guess / 2);
+    } else {
+      std::cout << "I WIN!!!!\n";
+      return 0;
+    }
+  }
   return 0;
 }
