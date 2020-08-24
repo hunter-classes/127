@@ -12,7 +12,32 @@
   - Learn Python the Hard Way: https://www.programmer-books.com/learn-python-3-the-hard-way/
 - Non Daedalus CSCI12700 site: https://huntercsci127.github.io/f20.html
 
-* Unix Command Line / Shell
+* Getting help
+
+Use the cohort mailing lists - daedalus2020 for cohort specific and
+daedalus to reach the entire cohort and our Slack channels. Here  is a
+[[https://stackoverflow.com/help/how-to-ask][link]] to notes on asking for CS help in general. You can also drop in
+to any of the TA's open sessions or the tutoring sessions listed on
+the main CSCI12700 (non Daedalus) section.
+
+* Syllabus
+*Note* Topics and ordering subject to change
+** Week 1 (8/27) - intro
+** Week 2 (8/31) - Introduction to Python / For loop
+** Week 3 Strings and functions 
+** Week 4 Conditionals
+** Week 5 lists / arrays (images decisions)
+** Week 6 Math operations and while loopsxam 1
+** Week 7 Midterm 1
+** Week 8 problem solving and program design
+** Week 9 Top down design, GIS, random numbers
+** Week 10 Language processing
+** Week 11 Language processingoops / simulations
+** Week 12 C++
+** Week 13 C++
+** Week 14 review 
+* More resources
+** Unix Command Line / Shell
 1. [[https://hellowebbooks.com/learn-command-line/][Learn the Command Line]]
 2. [[https://www.codecademy.com/learn/learn-the-command-line][Learn the Command Line]]
 3. [[http://linuxcommand.org/]]
