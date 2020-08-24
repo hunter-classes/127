@@ -1,23 +1,23 @@
 * CSCI 127 - Daedalus  
-| Instructor   | Mike Zamansky                           |
-| Email        | mz631@hunter.cuny.edu                   |
-| Office       | 1001K Hunter North                      |
-| Office Hours | 11:00 - 12:00 Mon/Thu or by appointment |
+| Instructor   | Mike Zamansky         |
+| Email        | mz631@hunter.cuny.edu |
+| Office       | 1001K Hunter North    |
+| Office Hours | By appointment        |
+
 
 * Main Class Syllabus links:
 - [[https://stjohn.github.io/teaching/csci127/f19.html][Main 127 materials]]
 - [[https://stjohn.github.io/teaching/csci127/f19/honors.html][Honors 127 materials (not Daedalus)]]
+- Class text: [[https://runestone.academy/runestone/books/published/thinkcspy/index.html]]
+- Additional resources: 
+  - Automate the Boring Stuff in Python: https://automatetheboringstuff.com/
+  - Learn Python the Hard Way: https://www.programmer-books.com/learn-python-3-the-hard-way/
 
 * Unix Command Line / Shell
 1. [[https://hellowebbooks.com/learn-command-line/][Learn the Command Line]]
 2. [[https://www.codecademy.com/learn/learn-the-command-line][Learn the Command Line]]
 3. [[http://linuxcommand.org/]]
 4. https://hellowebbooks.com/learn-command-line/
-
-* Python 
-- Automate the Boring Stuff in Python: https://automatetheboringstuff.com/
-- Learn Python the Hard Way: https://www.programmer-books.com/learn-python-3-the-hard-way/
-
 
 
 
