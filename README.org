@@ -22,11 +22,15 @@ the main CSCI12700 (non Daedalus) section.
 
 * Syllabus
 *Note* Topics and ordering subject to change
-** Week 1 (8/27) - intro
-** Week 2 (8/31) - Introduction to Python / For loop
-** Week 3 Strings and functions 
+** Week 1 (8/27) - intro / class and Daedalus overview
+** Week 2 (8/31) - What is CS / Introduction to Python / For loop / Functions
+- Readings: Chapter 3, 4
+** Week 3 Strings
+- Readings: Chapter 8
 ** Week 4 Conditionals
+- Readings: Chapter 5
 ** Week 5 lists / arrays (images decisions)
+- Readings: Chapter 11
 ** Week 6 Math operations and while loopsxam 1
 ** Week 7 Midterm 1
 ** Week 8 problem solving and program design
