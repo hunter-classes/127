@@ -5,6 +5,32 @@
 | Office       | 1001K Hunter North    |
 | Office Hours | By appointment        |
 
+* TA Schedule
+Below is the Teaching Assistant office schedule. 
+
+Some sessions will be drop in for general help and sometimes there
+will be specific topics and materials that the teaching assistants
+will go over. If the TA is running an open session on a topic, they
+will announce it in the TA stream for the course on Zulip with a link
+to join (Zoom, Google Meet etc.). If you're dropping in and there
+isn't a session already running, place a message on the TA Zulip
+stream for the course and the TA. Support won't always be via live
+meeting, it might also happen through the Zulip chat. 
+
+
+| Day       | Time            | TA     | Class |
+|-----------+-----------------+--------+-------|
+| Monday    | 02:00pm - 03:00 | Kyra   | Mixed |
+| Tuesday   | 01:00pm - 02:00 | Dan    |   127 |
+| Tuesday   | 02:00pm - 03:00 | Dan    |   135 |
+| Wednesday | 02:00pm - 03:00 | Ian    |   127 |
+| Thursday  | 01:30pm - 02:00 | Jungah |   127 |
+| Friday    | 11:00am - 12:00 | Anne   |   135 |
+| Saturday  |                 |        |       |
+| Sunday    | 08:30pm - 9:00  | Jungah |   135 |
+
+
+
 
 * Class resources
 - Class text: [[https://runestone.academy/runestone/books/published/thinkcspy/index.html]]
