@@ -3,6 +3,9 @@ import turtle
 wn = turtle.Screen()
 crush  = turtle.Turtle()
 squirt = turtle.Turtle()
+crush.shape("turtle")
+squirt.shape("turtle")
+crush.turtlesize(3);
 crush.goto(10,10)
 squirt.goto(250,250)
 
