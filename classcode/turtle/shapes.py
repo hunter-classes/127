@@ -9,6 +9,13 @@ def f(x):
         print(i)
 
 def draw_shape(t,x,y,number_sides,side_length,c):
+    """
+    have turtle t
+    draw a regular polygon with  number_sides sides
+    with each side being length c
+    starting from x,y using color c
+    
+    """
     turn_angle = 360 / number_sides
     t.color(c)
     t.penup()
@@ -18,9 +25,11 @@ def draw_shape(t,x,y,number_sides,side_length,c):
         t.forward(side_length)
         t.left(turn_angle)
         
-        
+       
 
-wn = turtle.Screen()
+#print("We've loaded and have access to shapes")
+
+#wn = turtle.Screen()
 
 
 
@@ -29,17 +38,18 @@ wn = turtle.Screen()
 #    crush.forward(side_length)
 #    crush.left(turn_angle)
 
-crush = turtle.Turtle()
-crush.shape("turtle")
-crush.color("green")
+#crush = turtle.Turtle()
+#crush.shape("turtle")
+#crush.color("green")
 
-squirt = turtle.Turtle()
-squirt.shape("turtle")
-squirt.color("red")
+#squirt = turtle.Turtle()
+#squirt.shape("turtle")
+#squirt.color("red")
 
-draw_shape(crush,50,50,5,50,"orange")
-draw_shape(squirt,200,200,10,65,"blue")
-draw_shape(squirt,10,10,3,15,"yellow")
-wn.exitonclick()
+#draw_shape(crush,50,50,5,50,"orange")
+#draw_shape(squirt,200,200,10,65,"blue")
+#draw_shape(squirt,10,10,3,15,"yellow")
 
-wn.mainloop()
+#wn.exitonclick()
+#
+#wn.mainloop()
