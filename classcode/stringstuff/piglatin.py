@@ -8,6 +8,12 @@ def piglatinify(word):
     vowels = 'aeiouAEIOU'
     # check the first character of word
     first = word[0]
+    if word[-1] == '.':
+        hasPeriod = True
+        word = word[:-1] # remove the period
+    else:
+        hasPeriod = False
+        
 
     if first in vowels:
         result=word+"yay"
@@ -18,7 +24,8 @@ def piglatinify(word):
         else:
             result = word[1:] + first + "ay"
             
-
+    if hasPeriod:
+        result = result + "."
     return result
 
 def piglatinify_sentence(sentence):
@@ -30,11 +37,7 @@ def piglatinify_sentence(sentence):
     """
 
     word_list = sentence.split()
-    if word[-1] == '.':
-        hasPeriod = True
-    else:
-        hasPeriod = False
-        
+
     result = ""
     for word in word_list:
         pigword = piglatinify(word)
