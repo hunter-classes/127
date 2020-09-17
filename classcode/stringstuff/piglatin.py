@@ -1,4 +1,3 @@
-import random
 
 def piglatinify(word):
     """
@@ -29,13 +28,26 @@ def piglatinify_sentence(sentence):
     
     make sure to handle periods
     """
-    
 
-result = piglatinify("hello")
-print(result)
+    word_list = sentence.split()
+    if word[-1] == '.':
+        hasPeriod = True
+    else:
+        hasPeriod = False
+        
+    result = ""
+    for word in word_list:
+        pigword = piglatinify(word)
+        result = result + pigword + " "
+    return result[0:-1]
+
+
+answer = piglatinify("hello")
+print(answer)
 
 sentence = "No TV and no beer makes Homer something something."
 # something. ---> omethingsay. (, ; : could be handled similarly)
 #
 
-
+answer = piglatinify_sentence(sentence)
+print(answer)
