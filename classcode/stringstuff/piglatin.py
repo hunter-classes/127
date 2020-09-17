@@ -21,17 +21,21 @@ def piglatinify(word):
             
 
     return result
-        
+
+def piglatinify_sentence(sentence):
+    """
+    convert an entire sentence into piglatin
+    and return the new sentence.
+    
+    make sure to handle periods
+    """
+    
+
 result = piglatinify("hello")
 print(result)
 
-result = piglatinify("Hello")
-print(result)
-
-result = piglatinify("able")
-print(result)
-
-result = piglatinify("Able")
-print(result)
+sentence = "No TV and no beer makes Homer something something."
+# something. ---> omethingsay. (, ; : could be handled similarly)
+#
 
 
