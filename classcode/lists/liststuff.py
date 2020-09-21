@@ -30,3 +30,13 @@ def build_random_list(length, min, max):
     for i in range(length):
         l.append(random.randrange(min,max))
     return l
+
+
+def find_min(l):
+    """
+    return the value of the smallest item in the list
+    assume l is a list of integers
+    
+    ex: [5,2,8,6,22,10) --> 2
+    """
+    return None
