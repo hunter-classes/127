@@ -24,9 +24,6 @@ def check_password(p):
             hasUpperCase = True
     if hasUpperCase == False:
         retval = retval + "need at least one uppercase, "
-            
-        
-
 
     # check for digit
     hasDigitCase=False
@@ -35,9 +32,10 @@ def check_password(p):
             hasDigitCase = True
     if hasDigitCase == False:
         retval = retval + "need at least one digit, "
-            
-        
 
+    retval = retval[0:-2]
+    if retval=="":
+        retval="valid"
     return retval
 
 def main():
