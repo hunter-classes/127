@@ -6,13 +6,38 @@ def check_password(p):
     if len(p) < 3:
         retval = retval + "must have at least 3 characters"
     # check for too long
-
+    if len(p) > 10:
+        retval = retval + "must have no more than 10 characters, "
+    
     # check for lower
+    hasLowerCase=False
+    for l in p:
+        if l.islower():
+            hasLowerCase = True
+    if hasLowerCase == False:
+        retval = retval + "need at least one lowercase, "
 
     # check for upper
+    hasUpperCase=False
+    for l in p:
+        if l.isupper():
+            hasUpperCase = True
+    if hasUpperCase == False:
+        retval = retval + "need at least one uppercase, "
+            
+        
+
 
     # check for digit
-    
+    hasDigitCase=False
+    for l in p:
+        if l.isdigit():
+            hasDigitCase = True
+    if hasDigitCase == False:
+        retval = retval + "need at least one digit, "
+            
+        
+
     return retval
 
 def main():
