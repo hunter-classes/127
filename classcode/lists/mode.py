@@ -42,7 +42,7 @@ def mode(l):
     mode_so_far_index = 0
 
     for i in range(len(l)):
-        f = freq(l,l[i])
+        f = freq(l,l[i]) # hidden complexity
         if f > mode_so_far_count:
             mode_so_far = l[i]
             mode_so_far_count = f
@@ -65,4 +65,5 @@ if __name__=='__main__':
 
     
     
+
     
