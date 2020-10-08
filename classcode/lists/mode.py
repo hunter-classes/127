@@ -59,7 +59,9 @@ if __name__=='__main__':
         minval = int(sys.argv[2])
         maxval = int(sys.argv[3])
         l = build_random_list(size,minval,maxval)
-        print(l)
+
+        m = mode(l)
+        print(m)
 
     
     
