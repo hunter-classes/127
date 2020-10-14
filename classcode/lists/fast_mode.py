@@ -21,6 +21,15 @@ def find_min(l):
             smallest=l[i]
     return smallest
 
+
+def find_max(l):
+
+    largest = l[0]
+    for i in range(len(l)):
+        if l[i] > largest:
+            largest=l[i]
+    return largest
+
 def freq(l,item):
     """
     returns the number of times item appears
@@ -51,15 +60,27 @@ def mode(l):
 
     return (mode_so_far,mode_so_far_count)
 
-def fast_mode(l):
+def fast_mode(l,minval,maxval):
+    # this algorithm has a bunch of loops
+    # but only one goes through the ENTIRE data set list
+    # the others are of set length (maxval)
+    # n algorithm 
     # built the count list so that they are all 0's
-
-    # loop through l and adjust the counts list so that
-    # counts[i] has the tally of the number of times i appears
-
-    # figure out which i occurs the most
+    counts = [0]*maxval
     
-    pass
+    # loop through l and adjust the counts list so that
+    for item in l:
+        counts[item] = counts[item] + 1
+
+    
+    # figure out which i occurs the most
+    max = find_max(counts)
+
+    # find the index where max appears
+    for i in range(len(counts)):
+        if counts[i] == max:
+            return i
+        
 
 
 
@@ -72,7 +93,7 @@ if __name__=='__main__':
         maxval = int(sys.argv[3])
         l = build_random_list(size,minval,maxval)
 
-        m = fast_mode(l)
+        m = fast_mode(l,minval,maxval)
         print(m)
 
 
