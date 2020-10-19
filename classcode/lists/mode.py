@@ -34,11 +34,12 @@ def freq(l,item):
 
 
 def mode(l):
-
+    # This algorithm is n^2 
+    # 3,4,2,6,3,2,9,2,10,2,8
     # assume the first item is the mode so far
     # and record how many times it appears
     mode_so_far = l[0]
-    mode_so_far_count = freq(l,l[0])
+    mode_so_far_count = freq(l, l[0])
     mode_so_far_index = 0
 
     for i in range(len(l)):
@@ -63,7 +64,5 @@ if __name__=='__main__':
         m = mode(l)
         print(m)
 
-    
-    
 
-    
+        

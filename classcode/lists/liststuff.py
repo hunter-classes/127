@@ -2,7 +2,7 @@ import random
 
 # lists
 color_list = ['red','green','blue']
-# strins are immutable
+# strings are immutable
 s="abcde"
 # can't say s[2] = 'x'
 
