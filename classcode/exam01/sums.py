@@ -6,16 +6,28 @@ def SumOfSquares(l):
     return sum
 
 
-def isIncreasling(l):
+def isIncreasing(l):
     for i in range(len(l)-1):
-        if l[i]<l[i+1]:
-            return True
-        elif l[i] > l[i+1]:
+        if l[i] >= l[i+1]:
             return False
-
-    return true
+    return True
             
 
+def removeSmallest(l):
+    smallest = l[0]
+    for i in l:
+        if i < smallest:
+            smallest = i
+
+    result = []
+
+    for i in l:
+        if i != smallest:
+            result = result + [i]
+    return result
+
+
+    
 
 def main():
 
@@ -31,6 +43,17 @@ def main():
     print(l, result)
     print("\n\n-------------------\n\n")
 
+    print("isIncrasing:")
+    l = [5,10,15,20]
+    print(l,isIncreasing(l))
+
+    l = [5,10,8,20]
+    print(l,isIncreasing(l))
+    print("\n\n-------------------\n\n")
+
+    print("removeSmallest:")
+    print(removeSmallest([5,2,3,1,5,3,5,2,6,1,10]))
+    
 if __name__=='__main__':
     main()
 
