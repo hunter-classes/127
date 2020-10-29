@@ -14,12 +14,14 @@ def sentence(words):
     result = result[:-1]
 
     return result
+
 def main():
     print(compress("halloween"))
     print(compress("apple"))
     print(compress("Special"))
 
-
+    print(sentence("I like to eat apple pie"))
+    
 if __name__=='__main__':
     main()
     
