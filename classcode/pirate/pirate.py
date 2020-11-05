@@ -128,7 +128,7 @@ if __name__=='__main__':
     if len(sys.argv) < 2:
         # print a message since they didn't specify
         print("Usage: " + sys.argv[0] + "-p|-m")
-        sys.exit(0) # and exit the program
+        #sys.exit(0) # and exit the program
     elif sys.argv[1] == '-p':
         which_filter = 'pirate'
     else:
