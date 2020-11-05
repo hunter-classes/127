@@ -1,5 +1,7 @@
 
 def create_bow(rawtext):
+    stopwords = [x for x in open("stopwords.txt").read().split()]
+    
     dict = {}
     rawtext = rawtext.lower()
     text = ""
@@ -7,8 +9,9 @@ def create_bow(rawtext):
         if letter.isalpha() or letter == '\n' or letter == ' ':
             text = text + letter
     for word in text.split():
-        dict.setdefault(word,0)
-        dict[word] = dict[word] + 1
+        if word not in stopwords:
+            dict.setdefault(word,0)
+            dict[word] = dict[word] + 1
     return dict
 
 
@@ -21,3 +24,6 @@ def file_to_bow(filename):
 # Example
 # find all the words (and counts) that appear more than twice
 #[(word, d[word]) for word in d.keys() if d[word] > 2]
+
+def getword(bag,morethan):
+    return [(word, bag[word]) for word in bag.keys() if bag[word] > morethan]
