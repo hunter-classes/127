@@ -21,18 +21,20 @@ def file_to_bow(filename):
     d = create_bow(text)
     return d
 
+
+def percent_sentiment(sentiment,bag):
+    total_words = sum(bag.values())
+    sent_words = sum([bag[x] for x in bag if x in sentiment])
+    return sent_words / total_words
+
+
 # Example
 # find all the words (and counts) that appear more than twice
 #[(word, d[word]) for word in d.keys() if d[word] > 2]
 
-def getword(bag,morethan):
-    return [(word, bag[word]) for word in bag.keys() if bag[word] > morethan]
+#positives = []
+#for word in open("positives.txt").read().split():
+#    positives.append(word)
 
-def percent_sentiment(sentiment,bag):
-    totalwords = sum([bag[x] for x in bag])
-    sentwords = sum([bag[x] for x in bag if x in sentiment])
-    return sentwords/totalwords
-    
-
-negatives = [x for x in open("negatives.txt",encoding='ISO-8859-1').read().split()]
-positives = [x for x in open("positives.txt",encoding='ISO-8859-1').read().split()]
+postivies = [x for x in open("positives.txt",encoding="ISO-8859-1").read().split()]
+negatives = [x for x in open("negatives.txt",encoding="ISO-8859-1").read().split()]
