@@ -27,3 +27,12 @@ def file_to_bow(filename):
 
 def getword(bag,morethan):
     return [(word, bag[word]) for word in bag.keys() if bag[word] > morethan]
+
+def percent_sentiment(sentiment,bag):
+    totalwords = sum([bag[x] for x in bag])
+    sentwords = sum([bag[x] for x in bag if x in sentiment])
+    return sentwords/totalwords
+    
+
+negatives = [x for x in open("negatives.txt",encoding='ISO-8859-1').read().split()]
+positives = [x for x in open("positives.txt",encoding='ISO-8859-1').read().split()]
