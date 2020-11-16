@@ -32,3 +32,5 @@ def build_index_from_file(filename):
     return (people,index)
 
 
+# example call: (p,i) = build_index_from_file("last_statements_full.csv")
+
