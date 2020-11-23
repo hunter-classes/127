@@ -1,4 +1,5 @@
 import csv
+import searches 
 def clean(text):
     """
     clean the text - turn all lower case, remove unwanted chars
