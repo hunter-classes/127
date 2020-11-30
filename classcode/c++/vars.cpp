@@ -1,6 +1,26 @@
 #include <iostream>
 
 
+/*  Anatomy of a C++ function
+
+    return_type name(parameters){
+
+    code
+    code
+    code 
+    
+    return a_value_of_the_return_type
+    }
+
+
+*/
+
+
+std::string hello(){
+  return "Hello";
+}
+
+
 int main()
 {
 
@@ -48,5 +68,7 @@ int main()
   // c++  math stuff is mostly like Python
   // + - * / = != > < >= <= 
 
+    std::cout << hello() << hello() << hello() << std::endl;
+    
   return 0;
 }
