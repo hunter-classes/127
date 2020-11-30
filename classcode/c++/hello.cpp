@@ -8,6 +8,9 @@
   line comment 
 */
 
+// statements can only appear in functions!!!!
+// you can't do this outside of a funciton:
+// std::cout << "This isn't in a function\n";
 
 
 // this is a a function in c++
@@ -16,8 +19,8 @@
 int main()
 {
 
+  // semi colon ends statements
   std::cout << "Hello World!" << std::endl;
-
   std::cout << "This is a second line with an embedded newline\n";
   
   return 0;
