@@ -45,5 +45,8 @@ int main()
 
   std::cout << c << " "  << s << "\n";
 
+  // c++  math stuff is mostly like Python
+  // + - * / = != > < >= <= 
+
   return 0;
 }
