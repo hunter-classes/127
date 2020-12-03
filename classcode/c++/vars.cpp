@@ -20,7 +20,6 @@ std::string hello(){
   return "Hello";
 }
 
-
 int main()
 {
 
