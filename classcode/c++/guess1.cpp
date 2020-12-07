@@ -17,7 +17,7 @@ int main()
     if (guess > secret){
       std::cout << "Your guess is too high.\n";
     }
-    else{
+    else if (guess < secret){
       std::cout << "Your guess is too low.\n";
     }
     
