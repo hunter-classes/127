@@ -5,31 +5,6 @@
 | Office       | 1001K Hunter North    |
 | Office Hours | By appointment        |
 
-* TA Schedule
-Below is the Teaching Assistant office schedule. 
-
-Some sessions will be drop in for general help and sometimes there
-will be specific topics and materials that the teaching assistants
-will go over. If the TA is running an open session on a topic, they
-will announce it in the TA stream for the course on Zulip with a link
-to join (Zoom, Google Meet etc.). If you're dropping in and there
-isn't a session already running, place a message on the TA Zulip
-stream for the course and the TA. Support won't always be via live
-meeting, it might also happen through the Zulip chat. 
-
-
-| Day       | Time            | TA     | Class |
-|-----------+-----------------+--------+-------|
-| Monday    | 02:00pm - 03:00 | Kyra   | Mixed |
-| Tuesday   | 01:00pm - 02:00 | Dan    |   127 |
-| Tuesday   | 02:00pm - 03:00 | Dan    |   135 |
-| Wednesday | 02:00pm - 03:00 | Ian    |   127 |
-| Thursday  | 01:30pm - 02:00 | Jungah |   127 |
-| Friday    | 11:00am - 12:00 | Anne   |   135 |
-| Saturday  |                 |        |       |
-| Sunday    | 08:30pm - 9:00  | Jungah |   135 |
-
-
 
 
 * Class resources
@@ -43,14 +18,12 @@ meeting, it might also happen through the Zulip chat.
 
 Use the cohort mailing lists - daedalus2020 for cohort specific and
 daedalus to reach the entire cohort and our Slack channels. Here  is a
-[[https://stackoverflow.com/help/how-to-ask][link]] to notes on asking for CS help in general. You can also drop in
-to any of the TA's open sessions or the tutoring sessions listed on
-the main CSCI12700 (non Daedalus) section.
+[[https://stackoverflow.com/help/how-to-ask][link]] to notes on asking for CS help in general. 
 
 * Syllabus
 *Note* Topics and ordering subject to change
-** Week 1 (8/27) - intro / class and Daedalus overview
-** Week 2 (8/31) - What is CS / Introduction to Python / For loop / Functions
+** Week 1 (8/26) - intro / class and Daedalus overview
+** Week 2  What is CS / Introduction to Python / For loop / Functions
 - Readings: Chapter 3, 4
 ** Week 3 Strings
 - Readings: Chapter 8
