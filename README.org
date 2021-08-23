@@ -23,6 +23,7 @@ daedalus to reach the entire cohort and our Slack channels. Here  is a
 * Syllabus
 *Note* Topics and ordering subject to change
 ** Week 1 (8/26) - intro / class and Daedalus overview
+- Reading: Chapters 1,2 (3 if you have time)
 ** Week 2  What is CS / Introduction to Python / For loop / Functions
 - Readings: Chapter 3, 4
 ** Week 3 Strings
