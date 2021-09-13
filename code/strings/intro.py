@@ -18,3 +18,4 @@ print(s[2])
 print("hello"*2)
 long_string="this is a long string with stuff"
 print(long_string[3:10])
+print("I made a change and I want to send it to GitHub")
