@@ -3,13 +3,20 @@ def initialize(name):
     """
     takes a name in the form "First Last" and returns "F. Last"
     ex: initializa("Mike Zamansky") would return "M. Zamansky"
-    pass
-
+    """
+    first = name[0]
+    spaceLocation = name.find(' ')
+    lastNameStart = spaceLocation + 1
+    lastName =  name[lastNameStart:]
+    initName = first + ". " + lastName
+    return initName # Note that we're returning the value not printing here
+    
 def capBoth(name):
     """
     takes a name in the form "first last" and returns the  name
     capitalized.
     ex: capBoth("mike zamansky") --> "Mike Zamansky"
+    """
     pass
 
 def bondify(name):
@@ -22,10 +29,13 @@ def bondify(name):
 
 def tests():
     # add tests here
-    pass
+    oldName = "James Sullivan"
+    newName = initialize(oldName)
+    print(oldName)
+    print(newName)
 
 
 
-if _name__=="__main__":
+if __name__=="__main__":
     tests()
     
