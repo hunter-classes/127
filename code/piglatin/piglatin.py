@@ -16,8 +16,7 @@ def piglatinify(word):
         encoded = word + "ay"
     else:
         encoded = rest + first + "ay"
-   
-    
+
     return encoded 
 
 
