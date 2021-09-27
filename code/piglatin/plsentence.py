@@ -23,8 +23,25 @@ def main():
     output = output.rstrip(" ")
     print(output)
     
+
+
+def listExample():
+    l=[5,2,3,10,15,30,23,3,30,50,3]
+    print(l)
+    z = 0
+    for item in l:
+        if item == 3:
+            z=z+1
+    print(z)
+
     
+    for i in range(len(l)):
+        l[i] = l[i] + 1
+        
+    print(l)
+        
 if __name__ == "__main__":
-    main()
+    listExample()
+    
 
 
