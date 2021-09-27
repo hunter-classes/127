@@ -15,9 +15,16 @@ import piglatin as pl
 
 
 def main():
-    print("HELLO")
-    print(pl.piglatinify("hello"))
+    test_sentence="love struck romeo art of serenade"
+    output = ""
+    for word in test_sentence.split():
+        result = pl.piglatinify(word)
+        output = output + result + " "
+    output = output.rstrip(" ")
+    print(output)
+    
     
 if __name__ == "__main__":
     main()
-    
+
+
