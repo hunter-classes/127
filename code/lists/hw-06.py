@@ -46,3 +46,14 @@ def sub_sum(l):
         result.append(list_sum(item))
     return result
 
+def frequency(l,value):
+    """
+    count the number of times value appears
+    in list l
+    """
+    count = 0
+    for item in l:
+        if item == value:
+            count = count + 1
+    return count
+
