@@ -34,7 +34,15 @@ def combine(l1,l2):
     return result
         
 def list_sum(l):
-    pass
+    sum = 0
+    for item in l:
+        sum = sum + item
+    return sum
+
 
 def sub_sum(l):
-    pass
+    result = []
+    for item in l:
+        result.append(list_sum(item))
+    return result
+
