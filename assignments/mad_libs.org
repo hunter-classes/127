@@ -1,5 +1,7 @@
 * Mad Libs
 
+* Due Monday 10/18 8:00am
+
 * Overview and general instructions
 
 For this project you are going to create a mad-libs style story
