@@ -83,3 +83,18 @@ for line in cleaned_lines:
     print(name+" has " + eye_color + " eyes")
     
 print("\n--------\n")
+
+# we use split to split a string into a lits
+# we use join to go the other way
+
+list=["one","two","three","four","five"]
+
+result_string1 = " ".join(list)
+print(result_string1)
+
+result_string2 = ",".join(list)
+print(result_string2)
+
+result_string3 = "-:-".join(list)
+print(result_string3)
+
