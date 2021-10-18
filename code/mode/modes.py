@@ -1,4 +1,5 @@
 import random
+import time
 
 def frequencies(l,value):
     count = 0;
@@ -8,7 +9,7 @@ def frequencies(l,value):
     return count
 
 
-def mode(L):
+def mode1(L):
     # assume the first one is the mode so far
     mode_so_far = L[0]
     count_so_far = frequencies(L,mode_so_far)
@@ -41,6 +42,16 @@ def mode2(L):
             mode_so_far = value
 
     return mode_so_far
+
+def speedtest(size):
+    l=[random.randrange(100) for x in range(size)]
+    start_time = int(time.time()*1000)
+    m = mode1(l)
+    elapsed_time = int(time.time()*1000) - start_time
+    return elapsed_time
+
+    
+
 
 def main():
     pass
