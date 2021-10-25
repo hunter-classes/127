@@ -43,14 +43,12 @@ def modefast(L):
     # since our data values are between 0 and 99 inclusive
     # we need a list of 100 spaces (0 through 99)
     tallies = [0] * 100
-
     # alternate ways to do the previous line:
     # tallies = [0 for x in range(100)]
     # or
     # tallies = []
     # for i in range(100):
     #   tallies.append(0)
-
     # second, go through L and add to the tallies
     for item in L:
         tallies[item] = tallies[item] + 1
