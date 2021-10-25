@@ -39,10 +39,16 @@ def mode2(L):
     return mode_so_far
 
 def modefast(L):
+    # zeroth - find the largest item i L
+    maxsofar = L[0]
+    for item in L:
+        if item > maxsofar:
+            maxsofar = item 
     # first make a list to hold the tallies
     # since our data values are between 0 and 99 inclusive
     # we need a list of 100 spaces (0 through 99)
-    tallies = [0] * 100
+    tallies = [0] * (maxsofar+1)
+    
     # alternate ways to do the previous line:
     # tallies = [0 for x in range(100)]
     # or
@@ -79,8 +85,8 @@ def twoloopssequential(l):
             s = s + item
     return s
 
-def speedtest(size,func):
-    l=[random.randrange(100) for x in range(size)]
+def speedtest(size,maxval,func):
+    l=[random.randrange(maxval) for x in range(size)]
     start_time = int(time.time()*1000)
     m = func(l)
     elapsed_time = int(time.time()*1000) - start_time
