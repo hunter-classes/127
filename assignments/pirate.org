@@ -6,7 +6,7 @@
 
 A program that takes in data from a file named *input.txt*. This file
 will consist of multiple lines of text. Your program will convert the
-text to pirate-speak and print out hte result.
+text to pirate-speak and print out the result.
 
 
 
