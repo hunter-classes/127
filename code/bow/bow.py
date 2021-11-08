@@ -28,6 +28,18 @@ def find_most_frequent(bag):
     #return them
     return result
 
+def get_words_more_frequent(bag,count):
+    result = [x for x in bag.keys() if bag[x] >= count]
+    return result
+
+def get_words_more_frequent_dict(bag,count):
+    result = {}
+    for word in bag.keys():
+        if bag[word] >= count:
+            result[word] = bag[word]
+    return result
+
+
 def main():
     load_bow("chapter1.txt")
 
