@@ -8,7 +8,17 @@ def load_bow(filename):
         bag.setdefault(word,0)
         bag[word] = bag[word] + 1
     return bag
- 
+
+
+def find_most_frequent(bag):
+    # get all the counts (values) from the bag
+
+    # find the largest
+
+    # find the words that occur that number of times
+
+    #return them
+    pass
 
 def main():
     load_bow("chapter1.txt")
