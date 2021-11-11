@@ -53,7 +53,21 @@ def remove_stop_words(bag,stopwordfilename):
 
     return newbag
 
+def sentiment(bag,wordlistfile):
+    # first, read in wordlistfile into a list
 
+    # Version 1: calculate the total number of words in bag
+    # Version 2: calculate the # of different words in bag 
+    
+    # Version 1: Calculate the number of words in bag that
+    #            are in wordlistfile 
+    # Version 2: Calculate the number of different words in bag
+    #            that are in wordlistfile
+
+    # Version 1: return the number from wordlistfile / total words
+    # Version 2: return the same ration but with the V2 numbers
+    
+    return 0
 def main():
     load_bow("chapter1.txt")
 
