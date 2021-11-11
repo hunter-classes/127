@@ -39,13 +39,20 @@ def get_words_more_frequent_dict(bag,count):
             result[word] = bag[word]
     return result
 
+
 def remove_stop_words(bag,stopwordfilename):
     # read a list of stopwords from stopwordfilename
-    # (grab the list from the class web site)
+    f = open(stopwordfilename)
+    stopwords = f.read().split()
+    
+    newbag = {}
+    
+    for word in bag.keys():
+        if word not in stopwords:
+            newbag[word] = bag[word]
 
-    # remove all the words in the stoplist word list from
-    # the bag dictionary
-    return bag
+    return newbag
+
 
 def main():
     load_bow("chapter1.txt")
