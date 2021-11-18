@@ -88,21 +88,21 @@ def sentiment_unique_words(bag,wordlistfile):
     sentwords = open(wordlistfile).read().split()
 
     # Version 1: calculate the total number of words in bag
-    total_words = count_words(bag)
-    print(total_words)
     # Version 2: calculate the # of different words in bag 
-    
-    # Version 1: Calculate the number of words in bag that
-    #            are in wordlistfile
-
+    total_words = len(bag.keys())
     
     # Version 2: Calculate the number of different words in bag
     #            that are in wordlistfile
+    # sum = 0
+    # for k in bag.keys():
+    #      if k in sentwords:
+    #         sum = sum + 1
+    total_sentwords = sum([1 for k in bag.keys() if k in sentwords])        
+    print(total_sentwords)
 
-    # Version 1: return the number from wordlistfile / total words
     # Version 2: return the same ration but with the V2 numbers
+    return total_sentwords / total_words    
     
-    return 0
 
 def main():
     load_bow("chapter1.txt")
