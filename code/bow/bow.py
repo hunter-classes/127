@@ -65,7 +65,7 @@ def count_words(bag):
 
 def sentiment_total_words(bag,wordlistfile):
     # first, read in wordlistfile into a list
-    sentwords = open(wordlistfile).read().split()
+    sentwords = open(wordlistfile,encoding="Latin-1").read().split()
 
     # Version 1: calculate the total number of words in bag
     total_words = count_words(bag)
@@ -85,7 +85,7 @@ def sentiment_total_words(bag,wordlistfile):
 
 def sentiment_unique_words(bag,wordlistfile):
     # first, read in wordlistfile into a list
-    sentwords = open(wordlistfile).read().split()
+    sentwords = open(wordlistfile,encoding="Latin-1").read().split()
 
     # Version 1: calculate the total number of words in bag
     # Version 2: calculate the # of different words in bag 
@@ -98,15 +98,60 @@ def sentiment_unique_words(bag,wordlistfile):
     #      if k in sentwords:
     #         sum = sum + 1
     total_sentwords = sum([1 for k in bag.keys() if k in sentwords])        
-    print(total_sentwords)
 
     # Version 2: return the same ration but with the V2 numbers
     return total_sentwords / total_words    
     
 
-def main():
-    load_bow("chapter1.txt")
+onebag = load_bow("one.dat")
+onebag_s = remove_stop_words(onebag,"stopwords.txt")
 
-if __name__=="__main__":
-    main()
-    
+twobag = load_bow("two.dat")
+twobag_s = remove_stop_words(twobag,"stopwords.txt")
+
+
+one_pos_tot = sentiment_total_words(onebag,"positives.txt")
+one_pos_s_tot = sentiment_total_words(onebag_s,"positives.txt")
+one_neg_tot = sentiment_total_words(onebag,"negatives.txt")
+one_neg_s_tot = sentiment_total_words(onebag_s,"negatives.txt")
+
+
+two_pos_tot = sentiment_total_words(twobag,"positives.txt")
+two_pos_s_tot = sentiment_total_words(twobag_s,'positives.txt')
+two_neg_tot = sentiment_total_words(twobag,"negatives.txt")
+two_neg_s_tot = sentiment_total_words(twobag_s,"negatives.txt")
+
+
+one_pos_unique = sentiment_unique_words(onebag,"positives.txt")
+one_pos_s_unique = sentiment_unique_words(onebag_s,"positives.txt")
+one_neg_unique = sentiment_unique_words(onebag,"negatives.txt")
+one_neg_s_unique = sentiment_unique_words(onebag_s,"negatives.txt")
+
+
+two_pos_unique = sentiment_unique_words(twobag,"positives.txt")
+two_pos_s_unique = sentiment_unique_words(twobag_s,'positives.txt')
+two_neg_unique = sentiment_unique_words(twobag,"negatives.txt")
+two_neg_s_unique = sentiment_unique_words(twobag_s,"negatives.txt")
+
+print("ONE:")
+print("Positive total: ",one_pos_s_tot)
+print("Negative total: ",one_neg_s_tot)
+print()
+
+print("TWO:")
+print("Positive total: ",two_pos_s_tot)
+print("Negative total: ",two_neg_s_tot)
+print()
+print()
+
+
+print("ONE:")
+print("Positive unique: ",one_pos_s_unique)
+print("Negative unique: ",one_neg_s_unique)
+print()
+
+print("TWO:")
+print("Positive unique: ",two_pos_s_unique)
+print("Negative unique: ",two_neg_s_unique)
+print()
+
