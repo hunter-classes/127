@@ -32,7 +32,7 @@ def add_statement(index,key,statement):
 
 
 
-f = open("last_statements_20.csv", encoding='Latin-1')
+f = open("last_statements_full.csv", encoding='Latin-1')
 
 reader = csv.DictReader(f)
 
@@ -48,5 +48,3 @@ for item in reader:
     statement = remove_stop_words(statement)
     index = add_statement(index,key,statement)
 
-for key  in index.keys():
-    print(key,len(index[key]))
