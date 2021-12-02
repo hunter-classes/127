@@ -1,4 +1,6 @@
 import csv
+# import searches as s
+import searches
 
 def clean(line):
     """
@@ -48,3 +50,16 @@ for item in reader:
     statement = remove_stop_words(statement)
     index = add_statement(index,key,statement)
 
+# for key in index.keys():
+#     if len(index[key]) > 50:
+#         print(key,len(index[key]))
+
+print('father', len(index['father']), index['father'])
+print('mother', len(index['mother']), index['mother'])
+print()
+result = searches.s_or(index, ['mother','father'])
+print('both',len(result),result)
+print()
+print()
+result = searches.s_and(index,['mother','father'])
+print(result)
