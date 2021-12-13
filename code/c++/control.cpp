@@ -1,9 +1,6 @@
 #include <iostream>
 
-
-
-int main()
-{
+void if_example(){
   int a;
 
   a=6;
@@ -19,6 +16,25 @@ int main()
   
   std::cout << "after the if\n";
 
+
+}
+
+void while_example(){
+  int i;
+
+  i = 0;
+  while (i < 10) {
+    std::cout << i << std::endl;
+    i = i + 1;
+  }
+}
+
+int main()
+{
+
+  // if_example();
+
+  while_example();
   
   return 0;
 }
