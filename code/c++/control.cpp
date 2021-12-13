@@ -26,7 +26,15 @@ void while_example(){
   while (i < 20) {
     std::cout << i << std::endl;
     i = i + 1;
+    if (i == 10){
+      break; // break exits the loop imediately
+      // if we put return in here it would hvae
+      // returned imediately
+
+    }
   }
+  std::cout << "After the loop\n";
+  
 }
 
 int main()
