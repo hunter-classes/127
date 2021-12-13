@@ -37,12 +37,50 @@ void while_example(){
   
 }
 
+void do_example(){
+  int i=10;
+  do {
+    std::cout << i << std::endl;
+    i--;
+    
+  } while (i > 0);
+}
+
+// This is the for COUNTING loop
+void for_example(){
+  // for (start value ; boolean test to keep looping ; change expression)
+  int i;
+  for (i = 0; i < 10 ; i=i+1){
+    std::cout << i << "\n";
+  }
+
+  std::cout << "\n\n";
+  
+  // Notice we can declare the variable in the for
+  // but it will be created when the for executs
+  // and it will be destroyed when the loop exits
+  for (int a = 10; a > 0 ;    a = a - 2){
+  
+    std::cout << "a is " << a << "\t";
+
+    
+  }
+  std::cout << "\n";
+  
+  
+
+}
+
 int main()
 {
 
   // if_example();
 
-  while_example();
+  // while_example();
+
+  // do_example();
+  
+  for_example();
   
   return 0;
 }
