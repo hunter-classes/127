@@ -23,7 +23,7 @@ void while_example(){
   int i;
 
   i = 0;
-  while (i < 10) {
+  while (i < 20) {
     std::cout << i << std::endl;
     i = i + 1;
   }
