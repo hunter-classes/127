@@ -1,7 +1,0 @@
-
-file = open("movies.csv")
-
-for line in file.readlines():
-    l = line.split(",")
-    print(l)
-    

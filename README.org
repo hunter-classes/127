@@ -1,6 +1,6 @@
 * CSCI 127 - Daedalus  
-| Meets        | Mon/Thu 9:45 - 11:00  |
-| Room         | Hunter North 10001C   |
+| Meets        | Mon/Thu 8:30 - 9:45   |
+| Room         | Hunter North 10001E   |
 | Instructor   | Mike Zamansky         |
 | Email        | mz631@hunter.cuny.edu |
 | Office       | 1001K Hunter North    |
@@ -23,7 +23,7 @@ daedalus to reach the entire cohort and our Slack channels. Here  is a
 
 * Syllabus
 *Note* Topics and ordering subject to change
-** Week 1 (8/26) - intro / class and Daedalus overview
+** Week 1  intro / class and Daedalus overview
 - Reading: Chapters 1,2 (3 if you have time)
 ** Week 2  What is CS / Introduction to Python / For loop / Functions
 - Readings: Chapter 3, 4
