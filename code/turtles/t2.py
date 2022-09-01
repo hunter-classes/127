@@ -1,5 +1,12 @@
 import turtle
 
+def sample_function():
+    print("This is a function")
+    print("It can be used multiple times")
+    
+          
+
+
 wn = turtle.Screen()
 
 crush = turtle.Turtle()
@@ -22,6 +29,9 @@ for i in range(3):
     squirt.right(120)
 
 
+sample_function()
+sample_function()
+sample_function()
 
 wn.exitonclick()
 wn.mainloop()
