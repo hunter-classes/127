@@ -26,6 +26,9 @@ def square(t,x,y,w,color,sidelen):
 
 #def triangle(fill in these):
 #    #code to draw the triangle
+
+#def hexagon(fill in these):
+#    #code to draw the hexagon
     
 #def ngon(t,numsides,x,y,color,width,sidelen):
 #    #code to draw the ngon
