@@ -4,20 +4,22 @@ def sample_function():
     print("This is a function")
     print("It can be used multiple times")
     
-          
+def square():
+    crush = turtle.Turtle()
+    # draw a square
+    for i in range(4):
+        crush.forward(50)
+        crush.right(90)
+
+    
 
 
 wn = turtle.Screen()
 
-crush = turtle.Turtle()
 
-# draw a square
-for i in range(4):
-    crush.forward(50)
-    crush.right(90)
+square()
 
 squirt = turtle.Turtle()
-
 # draw a triangle
 squirt.up()
 squirt.goto(100,100)
