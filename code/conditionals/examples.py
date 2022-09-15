@@ -9,14 +9,19 @@ def is_even_short_version(n):
 
 
 def is_odd(n):
-    pass
+    return not(is_even(n))
 
+print("Even tests")
 result = is_even(10)
 print("Result for 10 is:",result)
 result = is_even(11)    
 print("Result for 11 is:",result)
 
-print("Direct call:",is_even(11))
+print("Odd tests")
+result = is_odd(10)
+print("Result for 10 is:",result)
+result = is_odd(11)    
+print("Result for 11 is:",result)
 
-print("Direct call short version:",is_even_short_version(15))
-print("Direct call short version:",is_even_short_version(16))
+
+
