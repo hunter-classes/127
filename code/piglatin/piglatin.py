@@ -5,3 +5,8 @@ def piglatinify(word):
     """
     return word
 
+
+# Testing
+test_word = "hello"
+result = piglatinify(test_word)
+print(test_word," -> ",result)
