@@ -1,8 +1,7 @@
 def piglatinify(word):
     
     first = word[0]
-    if first == 'a' or first == 'e' or first == 'i' \
-               or first == 'o' or first == 'u':
+    if first in 'aeiou':
         result = word + 'ay'
     else:
         # move first letter to end and add 'ay'
