@@ -37,4 +37,14 @@ while i > 0:
     print(i)
     i = i - 1
     
+
+print("--------------")    
+
+# you can also traverse over a string
+s  = 'hello world'
+i = 0
+while i < len(s):
+    print(s[i])
+    i = i + 1
+
     
