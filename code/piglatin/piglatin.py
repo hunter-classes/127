@@ -55,37 +55,3 @@ def piglatinify(word):
     if end_of_sent:
         result = result + punctuation
     return result
-
-
-# Testing
-test_word = "hello"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "able"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "Cable"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "Able"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "Able."
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "cable."
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "Table!"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
-
-test_word = "deGromm"
-result = piglatinify(test_word)
-print(test_word," -> ",result)
