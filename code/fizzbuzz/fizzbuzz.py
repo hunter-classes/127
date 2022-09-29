@@ -15,6 +15,18 @@ def fizzbuzz(n):
             print(number)
         
 
+def fizzbuzz2(n):
+    
+    for number in range(1,n):
+        output = ""
+        if number % 3 == 0:
+            output = output + "fizz"
+        if number % 5 == 0:
+            output = output + "buzz"
+        if output == "":
+            output = str(number)
+        print(output)
+        
 value = 20
 print("Fizzbuzz up to ",value)
-fizzbuzz(value)
+fizzbuzz2(value)
