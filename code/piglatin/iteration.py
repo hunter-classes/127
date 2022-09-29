@@ -47,4 +47,8 @@ while i < len(s):
     print(s[i])
     i = i + 1
 
-    
+
+print("--------------")    
+
+for i in range( len(s) ):
+    print(s[i])
