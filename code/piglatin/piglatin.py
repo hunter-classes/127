@@ -21,7 +21,14 @@ def piglatinify_v1(word):
 
 
 def piglatinify(word):
-    
+
+    if word[-1] in ".!?":
+        end_of_sent = True
+        punctuation = word[-1]
+        word = word[:-1]
+    else:
+        end_of_sent = False
+
     # keep track of if the word had a capital letter
     if word[0] == word[0].upper():
         capital = True
@@ -43,7 +50,10 @@ def piglatinify(word):
     # a capital letter
     if capital:
         result = result.capitalize()
-        
+    
+    # test to see if we have to add punctuation on at the end
+    if end_of_sent:
+        result = result + punctuation
     return result
 
 
@@ -69,6 +79,10 @@ result = piglatinify(test_word)
 print(test_word," -> ",result)
 
 test_word = "cable."
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+test_word = "Table!"
 result = piglatinify(test_word)
 print(test_word," -> ",result)
 
