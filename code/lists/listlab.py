@@ -1,3 +1,4 @@
+
 def find_smallest(l):
     small_so_far = l[0]
     for item in l[1:]:
