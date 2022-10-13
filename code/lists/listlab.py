@@ -1,10 +1,10 @@
-
 def find_smallest(l):
     small_so_far = l[0]
     for item in l[1:]:
         if item < small_so_far:
             small_so_far = item
     return small_so_far
+
 
 def filter_odd(l):
     result = []
@@ -43,7 +43,7 @@ def combine_sum(l1,l2):
     else:
         shorter = len(l2)
     for i in range(shorter):
-        result.append( l1[i]+l2[i] )
+        result.append( l1[i] + l2[i] )
     if len(l1) > shorter:
         result = result + l1[i:]
     else:
