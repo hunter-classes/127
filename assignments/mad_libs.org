@@ -1,0 +1,97 @@
+* Mad Libs
+
+* Due: TBD 
+
+* Overview and general instructions
+
+For this project you are going to create a mad-libs style story
+generator.
+
+** Logistics
+- your program should be named madlibs.py and it should be stored in
+  a directory named project-01-madlibs in your repo.
+- This is a solo project. You may help each other (and in fact are
+  encouraged to do so) but make sure to cite code where you received
+  help by adding a comment in the appropriate area and also editing
+  the README to add a line like "I received assistance from whomever."
+
+    
+* Assignment specific instructions:
+
+Create a program name *madlibs.py* om the project folder. 
+
+Your program will take a string with substitutions in it. For example,
+your starting sentence might be:
+
+#+BEGIN_EXAMPLE
+Sam <VERB> the <NOUN> and then <VERB> the <NOUN> later.
+#+END_EXAMPLE
+
+Your program should also have lists of parts of speech like:
+
+#+BEGIN_SRC 
+VERBS=['ate','walked','slept']
+NOUNS=['dog','hammer','cat','car','frog']
+#+END_SRC
+
+When you see a word in angle brackets, replace it with a random word
+of that type. So, for instance, the above sample sentence might be
+transformed into:
+
+#+BEGIN_EXAMPLE
+Sam ate the hammer and then waled the frog later.
+#+END_EXAMPLE
+
+If you run the program again, you could get other substitutions.
+
+
+** Assignment notes:
+
+For this assignment, you are to decide what functions to write, what
+to name them and how to structure your program.
+
+You should also decide on what parts of speech you will use for
+substitutions.
+
+
+** Basic program requirements
+
+When run, it should print out at least two original sentences each
+followed by two different madlab outputs for each.
+
+These sentences can be declared as multiline (triple quote) strings in
+your program.
+
+** Grading
+
+C - completing the basic assignment
+B- to B+ - Complete at least one extra
+A- to A+ - Complete at least two extras
+
+** Extras
+
+- Instead of specifying the sentences or story to convert, write a
+  story in a file and read it from your program. Make sure to include
+  the file in your repo and that your program reads it correctly.
+
+- Add some replacements that are unique, that is, the first time you
+  see them you select on randomly but then you keep reusing that
+  replacement.
+  
+  For example, take this sentence:
+ 
+  #+BEGIN_EXAMPLE
+  <HERO> <VERB> in the <NOUN> and then <HERO> <VERB> <NOUN> later.
+  #+END_EXAMPLE
+
+   In this case, each <VERB> and <NOUN> would be replaced by a random
+   selection from the word lists but <HERO> would randomly choose a hero
+   once and then use that name for all instances of <HERO>
+
+- Pay attention to letter case. That is, if you replace a word at the
+  beginning of a sentence, it should be capitalized, otherwise,
+  lowercase. This is except in the case of proper nouns which should
+  always be capitalized. 
+
+- You can suggest other extras on Zulip. If an extra is approved,
+  anyone in the class can implement it.
