@@ -15,6 +15,8 @@
 
 f = open('data.dat')
 data = f.read()
+words_from_data = data.split()
+lines_from_data = data.split('\n')
 
 f.close()
 f = open('data.dat')
