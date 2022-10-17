@@ -21,3 +21,14 @@ lines_from_data = data.split('\n')
 f.close()
 f = open('data.dat')
 lines = f.readlines()
+# we can strip out the newlines from
+# lines
+
+# adding a line without a newline
+# just to show
+lines.append("This line has no newline")
+stripped = []
+for line in lines:
+    stripped.append(line.strip())
+
+
