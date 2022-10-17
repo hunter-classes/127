@@ -64,9 +64,9 @@ your program.
 
 ** Grading
 
-C - completing the basic assignment
-B- to B+ - Complete at least one extra
-A- to A+ - Complete at least two extras
+- C - completing the basic assignment
+- B- to B+ - Complete at least one extra
+- A- to A+ - Complete at least two extras
 
 ** Extras
 
