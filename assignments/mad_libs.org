@@ -12,8 +12,7 @@ generator.
   a directory named project-01-madlibs in your repo.
 - This is a solo project. You may help each other (and in fact are
   encouraged to do so) but make sure to cite code where you received
-  help by adding a comment in the appropriate area and also editing
-  the README to add a line like "I received assistance from whomever."
+  help by adding a comment in the appropriate area "I received assistance from whomever."
 
     
 * Assignment specific instructions:
