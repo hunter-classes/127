@@ -1,6 +1,6 @@
 * Mad Libs
 
-* Due: TBD 
+* Due: Friday Nov 3 8:00am
 
 * Overview and general instructions
 
@@ -64,11 +64,16 @@ your program.
 
 ** Grading
 
+*Note:* You must list any "extras" you complete at the top of your madlibs.py file in a comment
+
 - C - completing the basic assignment
 - B- to B+ - Complete at least one extra
 - A- to A+ - Complete at least two extras
 
 ** Extras
+
+*Note:* You must list any "extras" you complete at the top of your madlibs.py file in a comment
+
 
 - Instead of specifying the sentences or story to convert, write a
   story in a file and read it from your program. Make sure to include
