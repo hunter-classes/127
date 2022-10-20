@@ -37,4 +37,12 @@ tens_v2 = [10 for x in range(15) ]
 random_list_v2 = [random.randrange(5,10) for x in range(20)]
 random_list_v3 = [random.randrange(x) for x in range(1,100,5)]
 sentence = "now is the winter of our discontent"
-upper_case = [word.capitalize() for word in sentence.split()]
+upper_case = [piglatin.piglatinify(word.capitalize()) for word in sentence.split()]
+
+sqlist = [x*x for x in random_list_v3]
+
+l = [x for x in range(20)]
+odds = [x for x in l if x%2 == 1]
+evens = [x for x in l if x%2 == 0]
+bignums = [x for x in l if x > 10]
+shortwords = [w for w in sentence.split() if len(w) < 4]
