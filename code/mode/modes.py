@@ -58,5 +58,14 @@ def mode(dataset):
 
 
 
+def testMode(size,maxValue):
+    dataset = buildRandomList(size,maxValue)
+    # print(dataset)
+    t = datetime.datetime.now()
+    starttime = t.microsecond / 1000
+    m = mode(dataset)
+    end = datetime.datetime.now()
+    elapsed = (end.microsecond / 1000)-starttime
+    print("size: ",size," time: ",elapsed)
+    
 
-dataset = buildRandomList(20,30)
