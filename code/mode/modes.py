@@ -11,6 +11,9 @@ def findLargest(dataset):
 
 
 def freq(dataset,v):
+    # since this loops over the
+    # entire data set once
+    # it takes n time 
     #count = 0
     #for item in dataset:
     #    if item == v:
@@ -48,24 +51,49 @@ def mode(dataset):
       mode so far    
     """
     modeSoFar = dataset[0]
-    freqSoFar = freq(dataset,modeSoFar)
-    for item in dataset[1:]:
-        if freq(dataset,item) > freqSoFar:
+    freqSoFar = dataset.count(modeSoFar)
+    for item in dataset[1:]: #outer loop -> n
+        # calling freq each time is n
+        # if freq(dataset,item) > freqSoFar:
+        if dataset.count(item) > freqSoFar:
             modeSoFar = item
-            freqSoFar = freq(dataset,item)
-            
+            freqSoFar = dataset.count(item)
     return modeSoFar
 
 
+def fastMode(dataset):
+    # assume all values in dataset
+    # are between 0 and 99 inclusive
 
+    # 1. make a list of 100 slots
+    # and set them all to 0
+    # this will store our tallies
+
+    # 2. Loop through our dataset
+    # and for each item incremement
+    # (add 1) to the appropriate
+    # slot in the tallies list
+
+    # 3. the index with the highest
+    # value in tallies is the mode
+
+    pass
+
+    
 def testMode(size,maxValue):
+    print("Dataset Size: ",size)
     dataset = buildRandomList(size,maxValue)
     # print(dataset)
-    t = datetime.datetime.now()
-    starttime = t.microsecond / 1000
     m = mode(dataset)
-    end = datetime.datetime.now()
-    elapsed = (end.microsecond / 1000)-starttime
-    print("size: ",size," time: ",elapsed)
-    
+    print("Mode: ",m)
+
+def testFindLargest(size,maxValue):
+    print("Dataset Size: ",size)
+    dataset = buildRandomList(size,maxValue)
+    # print(dataset)
+    m = findLargest(dataset)
+    print("Largest: ",m)
+
+#testFindLargest(80000,30)
+testMode(40000,30)
 
