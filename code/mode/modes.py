@@ -104,9 +104,11 @@ def testFindLargest(size,maxValue):
 
 def testFastMode(size,maxValue):
     dataset = buildRandomList(size,maxValue)
-    print(dataset)
+    #print(dataset)
     result = fastMode(dataset)
     print(result)
 #testFindLargest(80000,30)
 #testMode(40000,30)
+
+testFastMode(1000000,30)
 
