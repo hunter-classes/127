@@ -11,9 +11,20 @@ def count_letters(s):
     """
     counts = {}
     for letter in s:
-        counts[letter] = counts[letter] + 1
-
+        if letter in counts.keys():
+            counts[letter] = counts[letter] + 1
+        else:
+            counts[letter]=1
     return counts
 
 
-result = count_letters(s)
+def count_words(s):
+    counts = {}
+    for word in s.split():
+        counts.setdefault(word,0)
+        counts[word] = counts[word]+1
+        
+    return counts
+
+letter_counts = count_letters(s)
+word_counts = count_words(s)
