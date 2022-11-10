@@ -4,6 +4,11 @@ interesting about it other than the fact that there are a bunch
 of words over multiple lines and we're going to do some processing on them
 """
 
+translations = """a:b
+c:d
+oldword:neword
+"""
+
 def count_letters(s):
     """
     Count the number of times each letter

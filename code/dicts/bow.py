@@ -18,7 +18,7 @@ def build_bow(data):
 
 
 
-file = open("scandal.txt")
+file = open("scandal.txt",encoding='utf-8')
 
 
 raw_data = file.read()
