@@ -16,6 +16,18 @@ def build_bow(data):
         
     return counts
 
+def get_words_min_max(bag,mincount,maxcount):
+    results = []
+    for word in bag.keys():
+        if bag[word] >= mincount and bag[word] <= maxcount:
+            results.append([word,bag[word]])
+    return results
+
+# same as above but with a list comprehension
+def get_words_range(bag,mincount,maxcount):
+    results = [ [x, bag[x]] for x in bag if bag[x] >= mincount \
+                and bag[x] <= maxcount]
+    return results
 
 
 file = open("scandal.txt",encoding='utf-8')

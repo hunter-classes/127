@@ -46,3 +46,13 @@ odds = [x for x in l if x%2 == 1]
 evens = [x for x in l if x%2 == 0]
 bignums = [x for x in l if x > 10]
 shortwords = [w for w in sentence.split() if len(w) < 4]
+vwords = [ w for w in sentence.split() if w[0] in 'aeiou']
+
+story = "this is my story with <VERB> and <NOUN> etc"
+
+final_story=[]
+for word in story.split():
+    if somethingaboutword:
+        final_story.append(word)
+    else:
+        final_story.append(do_subtitution(word))
