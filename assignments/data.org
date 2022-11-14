@@ -1,6 +1,6 @@
 * Working with CSV data
 
-* Due: TBD
+* Due: Wed 12/14 7:00am
 
 * Overview and general instructions
 
