@@ -6,8 +6,7 @@ of words over multiple lines and we're going to do some processing on them
 
 translations = """a:b
 c:d
-oldword:neword
-"""
+oldword:neword"""
 
 def count_letters(s):
     """
