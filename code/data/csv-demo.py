@@ -46,3 +46,17 @@ import csv
 # using DictReader and list comprehensions
 reader = csv.DictReader(open("movies.csv"))
 data = [x for x in reader]
+
+# get all the comedy ratings using a loop
+#comedy=[]
+#for item in data:
+#    comedy.append(int(item['Comedy']))
+
+# get all comedy using a comprehension
+comedy = [int(x['Comedy']) for x in data] 
+
+# get all people who like comedy (>5)
+likes_comedy = [ x for x in data if int(x['Comedy'])>7]
+
+# also likes horror
+likes_comedy_and_horror = [x['Code name'] for x in likes_comedy if int(x['Horror']) > 6]
