@@ -13,7 +13,8 @@ points:
 - Various web sites with links to data sets:
   - https://corgis-edu.github.io/corgis/csv/
   - https://www.dataquest.io/blog/free-datasets-for-projects/
-  - https://www.kaggle.com/rtatman/fun-beginner-friendly-datasets
+  - https://www.kaggle.com/rtatman/fun-beginner-friendly-datasets 
+  - https://www.kaggle.com
   - https://rs.io/100-interesting-data-sets-for-statistics/
   - https://domohelp.domo.com/hc/en-us/articles/360043931814-Fun-Sample-DataSets
   - https://www.dataquest.io/blog/free-datasets-for-projects/
