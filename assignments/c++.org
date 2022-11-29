@@ -1,0 +1,63 @@
+* C++
+
+* Due: Thu 12/15 7:00am
+
+* Overview and general instructions
+
+This project is a solo project - that is, you are to work without any
+partners.
+
+Folder: *cpp*
+Filename: *main.cpp*
+
+
+
+    
+* Assignment specific instructions:
+
+For this assignment, you will write a small C++ program. The program
+will be compiled and tested under Linux.
+
+** Grading
+
+|                            | Working alone |
+|----------------------------+---------------|
+| Base project               | C             |
+| Show a working if and loop | B             |
+| Show a working function    | A             |
+|----------------------------+---------------|
+
+
+** Base project
+
+Write a working C++ program in a file named *main.cpp* in your *cpp*
+folder. The program should print out the string "Hello World!"
+followed by a newline.
+
+Your program *should not require user input* - if parts of your
+program need values, juts hard code them in the program even if the
+results are "fake."
+
+
+** Show a working if and loop
+
+To get a B grade (B-/B/B+) your program must show that you understand
+an if statement and a loop. You can modify your program in any way to
+exhibit this.
+
+Some possibilities:
+- Determine which of two numbers is greater
+- Determine the absolute value of a number
+- Calculate the sum of values from 1 to some larger numbers
+  
+** Show a working function
+
+Make sure you've implemeted at least one function that takes in at
+least one parameter and returns a value. For example. if you determine
+the abolute value of a number for your program, you could write a
+function that takes in an integer parameter and returns its absolue
+value.
+
+
+
+  
