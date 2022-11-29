@@ -11,6 +11,11 @@ Folder: *cpp*
 Filename: *main.cpp*
 
 
+* Resources
+- https://www.tutorialspoint.com/cplusplus/
+- http://www.cplusplus.com/doc/tutorial/
+- https://www.youtube.com/playlist?list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG
+  
 
     
 * Assignment specific instructions:
