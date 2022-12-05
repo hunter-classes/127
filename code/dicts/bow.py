@@ -47,3 +47,4 @@ bag = build_bow(data)
 
 stop_words = open("stopwords.txt").read().split()
 bag_s = remove_words(bag,stop_words);
+
