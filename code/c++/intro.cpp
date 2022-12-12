@@ -9,12 +9,12 @@
   to compile:
   g++ intro.cpp
   or
-  g++ -o intor intro.cpp
+  g++ -o into intro.cpp
 
   to run:
   ./a.out
   or
-  ./intro.cpp
+  ./intro
   
   
  */
